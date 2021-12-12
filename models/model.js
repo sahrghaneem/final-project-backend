@@ -8,8 +8,10 @@ const userSchema = new Schema( {
 		type:Number,
 		default:0
 	},
-	upCar:String
-
+	upCar:{
+		type:String,
+		default:'img4'
+	}
 })
 const userModel = mongoose.model('user', userSchema);
 

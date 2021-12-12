@@ -40,18 +40,18 @@ const getUser = async (req, res) => {
 const saveCoins =async(req,res) => {
   userModel.updateOne(
     {username: req.body.username},
- 
     {coins : req.body.coins }, function(err){
-      console.log(err);
+    //  console.log(err);
     }, 
     );  
   }
 
 const upGradeCar =async(req,res)=>{
-userModel.find(
+
+userModel.updateOne(
   {username:req.body.username},
   {upCar:req.body.upCar},function(err){
-    console.log(err);
+  //  console.log(err);
   })
 }
   
@@ -115,6 +115,7 @@ const addNewUser =async (req, res) => {
           token: token,
           coins:data.coins,
           username:data.username,
+          upCar: data.upCar,
           status: true
         });
       }
