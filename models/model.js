@@ -16,3 +16,21 @@ const userSchema = new Schema( {
 const userModel = mongoose.model('user', userSchema);
 
 module.exports = {userModel};
+
+// //{
+//     "dependencies": {
+//         "bcryptjs": "^2.4.3",
+//         "body-parser": "^1.19.0",
+//         "cors": "^2.8.5",
+//         "dotenv": "^10.0.0",
+//         "express": "^4.17.1",
+//         "jsonwebtoken": "^8.5.1",
+//         "mongoose": "^6.0.12",
+//         "uniqid": "^5.4.0"
+//     },
+//         "scripts": {
+//             "start":"node server.js"
+//           }
+//     }
+
+  
